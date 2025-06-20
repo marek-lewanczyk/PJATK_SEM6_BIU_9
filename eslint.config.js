@@ -10,8 +10,8 @@ export default defineConfig([
     files: ["**/*.{js,ts,jsx,tsx}"],
     plugins: {
       react: pluginReact,
-      'react-hooks': reactHooks,
-      'jsx-a11y': jsxA11y,
+      "react-hooks": reactHooks,
+      "jsx-a11y": jsxA11y,
     },
     settings: {
       react: {
@@ -28,11 +28,12 @@ export default defineConfig([
       },
     },
     rules: {
-      'react-hooks/rules-of-hooks': 'error',
-      'react-hooks/exhaustive-deps': 'warn',
-      'jsx-a11y/alt-text': 'error',
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "jsx-a11y/alt-text": "error",
     },
   },
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  eslintConfigPrettier,
 ]);

@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import { useLocation } from "react-router";
 
 export default function NotFound() {
-    const location = useLocation();
+  const location = useLocation();
 
-    return (
-        <div>
-            <h1>Nie znaleziono elementu: {location.pathname}</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Nie znaleziono elementu: {location.pathname}</h1>
+    </div>
+  );
 }
