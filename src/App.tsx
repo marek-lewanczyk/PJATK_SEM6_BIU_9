@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css";
 import { NavLink, Outlet } from "react-router";
+import WelcomeMessage from "./components/WelcomeMessage.tsx";
 
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <WelcomeMessage name="Marek">
+        <p>This is a custom message just for you.</p>
+      </WelcomeMessage>
       <nav className="nav">
         <NavLink to="/about">About</NavLink>
         <NavLink to="/services">Services</NavLink>
