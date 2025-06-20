@@ -9,6 +9,7 @@ function App() {
       <WelcomeMessage name="Marek">
         <p>This is a custom message just for you.</p>
       </WelcomeMessage>
+      <WelcomeMessage name={123} />
       <nav className="nav">
         <NavLink to="/about">About</NavLink>
         <NavLink to="/services">Services</NavLink>
